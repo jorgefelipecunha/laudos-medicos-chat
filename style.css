@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+.header-logo {
+  border: 1px solid #2a767e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: calc(100% - 26px);
+  padding: 12px;
+  box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  z-index: 1;
+  background-color: #2a767e;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+}

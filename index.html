@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
+    <meta
+      property="og:title"
+      content="Versão de Teste"
+    />
+    <!-- <link rel="icon" type="image/x-icon" href="./images/favicon.ico" /> -->
+    <link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+    <meta
+      property="og:description"
+      content="Versão de Teste"
+    />
+    <!-- <meta property="og:image" content="./image/logo-polishop.png" />
+    <meta property="og:url" content="https://aichef.polishop.com.br/" />
+    <meta property="og:type" content="website" /> -->
+    <title>Versão de Teste</title>
+  </head>
+  <body>
+    <div class="header-logo">
+      <a href="#" target="_blank">
+        <img
+          src="./image/makiDoctor.png"
+          alt="Logodo "
+          width="auto"
+          height="30"
+        />
+      </a>
+     <h3>Assistente de radiologia</h3>
+    </div>
+    <flowise-fullchatbot></flowise-fullchatbot>
+    <script type="module">
+      import Chatbot from "https://cdn.jsdelivr.net/gh/StartSe/embed-jupiter@latest/dist/web.js";
+      Chatbot.initFull({
+        chatflowid: "e34d2376-ae34-4196-b07d-b81bb12fcaba",
+        apiHost: "https://polishop-ai-builder.startse.com",
+        theme: {
+          chatWindow: {
+            welcomeMessage: `Olá, qual a sua dúvida?
+`,
+            backgroundColor: "#FAFAFA",
+            // height:800,
+            // width: 100,
+            fontSize: 14,
+            poweredByTextColor: "#303235",
+            botMessage: {
+              backgroundColor: "#EEEEEE",
+              textColor: "#303235",
+              showAvatar: true,
+              avatarSrc: "./image/persona.png",
+            },
+            userMessage: {
+              backgroundColor: "#2A767E",
+              textColor: "#ffffff",
+              avatarSrc:
+                "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+            },
+            textInput: {
+              placeholder: "Qual sua dúvida?",
+              backgroundColor: "#fdfdfd",
+              textColor: "#3c3c3b",
+              sendButtonColor: "#2A767E",
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
